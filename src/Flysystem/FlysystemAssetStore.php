@@ -8,6 +8,7 @@ use SilverStripe\Assets\Flysystem\FlysystemAssetStore as SS_FlysystemAssetStore;
 class FlysystemAssetStore extends SS_FlysystemAssetStore
 {
     private static $webp_default_quality = 80;
+    private $webp_quality;
 
     public function __construct()
     {
